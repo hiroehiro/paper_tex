@@ -2,21 +2,24 @@
 \documentclass[main]{subfiles}
 
 \begin{document}
-    \chapter{先行研究の研究結果}
+    \chapter{先行研究の結果}
     本研究内容の元となる，先行研究の結果をまとめる\cite{senkoukenkyu}．
 
     \section{Hypervolume(HV)}
     多目的最適化のパレート最適解集合を評価するための指標としてHypervolumeを用いる\cite{hv}．
     HVはパレート最適解の収束性と多様性を測る．
     HVは，あらかじめ設定する参照点\boldmath$r$と，得られたパレート最適解集合が目的空間で形成する
-    \textbf{M}次元体積を求めたものである．ここで，\textbf{M}は目的数を表す．
-    HVは\label{hv_siki}で求められる．
+    M次元体積を求めたものである．ここで，Mは目的数を表す．
+    HVは\ref{hv_siki}で求められる．
     \begin{align}
-        HV &=& \bigcup_{j=1}^n v(\bf{p}^{(j)}, \bf r) \\ 
-        v(\bf{p}^{(j)}, \bf r) &=& \prod_{i=1}^d (r_i - p_i^{(j)})
+        v(\bf{p}^{(j)}, \bf r) = \prod_{i=1}^d (r_i - p_i^{(j)}) \\
+        HV = \bigcup_{j=1}^n v(\bf{p}^{(j)}, \bf r)
         \label{hv_siki}
     \end{align}
-
+    M目的最適化問題の時，参照点\boldmath$r$はパレート最適解集合中のどの解が持つ各目的関数値よりも悪い点に設定する．
+    HVはこの参照点\boldmath$r$とパレート最適解集合を囲む領域である．
+    HVの値が大きいほど，収束性が高く，多様性のあるパレート最適解集合であると言える．
+    
 
 \end{document}
 
