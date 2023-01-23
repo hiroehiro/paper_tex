@@ -40,7 +40,6 @@
 \usepackage{framed}
 \usepackage{type1cm}
 \usepackage{geometry}
-\usepackage{bm}
 \usepackage[backend=biber,style=ieee]{biblatex}
 \addbibresource{references.bib}
 \captionsetup{compatibility=false}

@@ -11,10 +11,11 @@
     HVは，あらかじめ設定する参照点\boldmath$r$と，得られたパレート最適解集合が目的空間で形成する
     \textbf{M}次元体積を求めたものである．ここで，\textbf{M}は目的数を表す．
     HVは\label{hv_siki}で求められる．
-    \begin{equation}
-        HV = \bigcup_{j=1}^n
+    \begin{align}
+        HV &=& \bigcup_{j=1}^n v(\bf{p}^{(j)}, \bf r) \\ 
+        v(\bf{p}^{(j)}, \bf r) &=& \prod_{i=1}^d (r_i - p_i^{(j)})
         \label{hv_siki}
-    \end{equation}
+    \end{align}
 
 
 \end{document}

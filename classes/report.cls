@@ -25,7 +25,6 @@
 \usepackage{geometry}
 \usepackage[dvipdfmx]{pdfpages}
 \usepackage[backend=biber,style=ieee]{biblatex}
-\usepackage{bm}
 \addbibresource{references.bib}
 \captionsetup{compatibility=false}
 
