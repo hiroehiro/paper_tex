@@ -2,10 +2,23 @@
 \documentclass[main]{subfiles}
 
 \begin{document}
-\chapter{Walsh関数を用いた代理モデル}
+\chapter{walsh関数を用いた代理モデル}
     前章で，先行研究の課題に計算時間の長さが上げられた．
     本研究では高速な代理モデルを使い，SUMOによるシミュレートを代理することによって計算時間の短縮を図る．
     本研究で代理モデルとして用いるWalsh関数について述べる．
+
+    \section{Wlash関数}   
+    Walsh関数\cite{walsh}は1923年にJ.L.Walshにより提唱された．
+    Walsh関数はn個の入力$x \in \{0, 1\}, x_1, x_2, ..., x_n$の時，\ref{walsh_siki}で表される．
+    \begin{equation}
+        \begin{split}
+            f(x_1, x_2, ..., x_n) &= w_1(-1)^{x_1} + w_2(-1)^{x_2} + ... + w_n(-1)^{x_n} \\
+            &+ w_{12}(-1)^{x_1+x_2} + ... + w_{n-1n}(-1)^{x_{n-1}+x_n} \\
+            &+ w_{123}(-1)^{x_1+x_2+x_3} + ... + w_{n-2n-1n}(-1)^{x_{n-2}+x_{n-1}+x_n} \\
+            &+ ...
+            \label{walsh_siki}
+        \end{split}
+    \end{equation}
     
     
 
