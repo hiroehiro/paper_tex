@@ -34,7 +34,7 @@
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{4}
 
-\renewcommand{\figurename}{\normalsize Fig.}
-\renewcommand{\tablename}{\normalsize Table}
+% \renewcommand{\figurename}{\normalsize Fig.}
+% \renewcommand{\tablename}{\normalsize Table}
 
 \SetupFloatingEnvironment{listing}{name=Code.}
