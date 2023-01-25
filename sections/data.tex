@@ -16,5 +16,37 @@
     1世代目までのデータ，2世代目までのデータ，$\dots$，99世代目までのデータを学習データにし，それぞれの学習データ数の時の予測精度を求める．
     評価指標は決定係数，MAEを用いる．
 
+    \section{結果}
+    決定係数を評価指標にした時の予測精度を図\ref{data_1}に示す．
+    \begin{figure}
+        \begin{minipage}[b]{0.45\linewidth}
+          \centering
+          \includegraphics[width=\linewidth]{figures/s_r.png}
+          \subcaption{総移動時間}
+        \end{minipage}
+        \begin{minipage}[b]{0.45\linewidth}
+          \centering
+          \includegraphics[width=\linewidth]{figures/s_mae.png}
+          \subcaption{乗車率}
+        \end{minipage}
+        \caption{学習データ数による決定係数}
+        \label{data_1}
+      \end{figure}
+      
+    MAEを評価指標にした時の予測精度を図\ref{data_2}に示す．
+    \begin{figure}
+        \begin{minipage}[b]{0.45\linewidth}
+          \centering
+          \includegraphics[width=\linewidth]{figures/z_r.png}
+          \subcaption{総移動時間}
+        \end{minipage}
+        \begin{minipage}[b]{0.45\linewidth}
+          \centering
+          \includegraphics[width=\linewidth]{figures/z_mae.png}
+          \subcaption{乗車率}
+        \end{minipage}
+        \caption{学習データ数によるMAE}
+        \label{data_2}
+      \end{figure}
 
 \end{document}
