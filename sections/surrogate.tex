@@ -16,7 +16,7 @@
         \caption{バス利用率4.5\%の場合のHV推移}
         \label{hv_plot_}
     \end{figure}
-    この研究では100世代まで最適化を行い，そのHVが$1.538\times 10^6$であった．
+    先行研究では100世代まで最適化を行い，そのHVが$1.538\times 10^6$であった．
     つまり，代理モデルを導入して最適化を行った結果，
     \begin{itemize}
         \item 100世代目のHVが$1.538\times 10^6$を超える
@@ -24,7 +24,7 @@
     \end{itemize}
     この2つのどちらかを満たしたとき，代理モデルによって最適化を高速化することが出来たと言える．
     
-    また，先行研究でのアルゴリズムのフローチャートを図\ref{old_algo}に示す．
+    また，先行研究で使用したアルゴリズムのフローチャートを図\ref{old_algo}に示す．
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{figures/old_algo.png}
@@ -36,6 +36,17 @@
     親集団と子集団合わせた40個体に対し，NSGAⅡにより優れた解20個体を選択する．選ばれた20個体を親集団とする．
     このループを1世代として，ループを100回行うのが先行研究のアルゴリズムである．
 
+    \section{実験方法}
+    代理モデルの導入方法について2つの方法を検証した．
+    以下でその2つについて，手法のフローチャートと特徴について述べる．
+        \subsection{代理モデル内で進化型}
+        図\ref{d}にフローチャートを示す．
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{figures/d.png}
+            \caption{代理モデル内で進化型}
+            \label{d}
+        \end{figure}
 
 
 
